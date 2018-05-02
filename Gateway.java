@@ -26,8 +26,12 @@ public class Gateway {
 		return gatewayMeters;
 	}
 
-	public Meter getMeter(String meterID) {
+	public Meter getMeter(int meterID) {
 		// search for the id name in the meters list
+		return null;
+	}
+	
+	public Meter getMeterByProtocol(String protocol){
 		return null;
 	}
 
