@@ -3,6 +3,7 @@ package meter;
 import java.util.ArrayList;
 
 import exceptions.RegisterNotFoundException;
+import protocol.Protocol;
 import register.Register;
 
 public interface Meter {
@@ -11,7 +12,7 @@ public interface Meter {
 
 	public String getManufacturer();
 
-	public String getProtocol();
+	public Protocol getProtocol();
 
 	public Register getRegister(String registerID) throws RegisterNotFoundException;
 

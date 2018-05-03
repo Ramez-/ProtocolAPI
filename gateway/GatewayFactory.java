@@ -7,22 +7,14 @@ import exceptions.MeterNotFoundException;
 import meter.Meter;
 import protocol.Protocol;
 
-public interface GatewayFactory {
+public class GatewayFactory {
 
-	public static Gateway create() {
-		return new Gateway();
+	public static Gateway create() throws GatewayNotFoundException {
+		return null;
 	}
 
 	public static Gateway create(String gatewayID) throws GatewayNotFoundException {
-		return new Gateway(gatewayID);
+		return null;
 	}
-
-	public ArrayList<Meter> getAllMetersByProtocol(String protocol);
-
-	public Meter getMeter(int meterID) throws MeterNotFoundException;
-
-	public ArrayList<Meter> getAllMeters();
-
-	public ArrayList<Protocol> getAllSupportedProtocols();
 
 }

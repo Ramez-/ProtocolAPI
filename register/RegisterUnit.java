@@ -3,7 +3,7 @@ package register;
 /*
  * Possible unites returned by registers;
  */
-public enum Unit {
+public enum RegisterUnit {
 
-	Kw, W;
+	Kw, W, kWh, kvarh;
 }
